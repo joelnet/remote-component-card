@@ -1,0 +1,16 @@
+{
+  "name": "JavaScript Joel",
+  "tagline": "Computer Scientist",
+  "profileImage": "https://s3-us-west-2.amazonaws.com/joelnet-demos/components/remote-profile-card/joel-head.png",
+  "profileImage2": "https://s3-us-west-2.amazonaws.com/joelnet-demos/components/remote-profile-card/mojo-head.png",
+  "description": "Computer Scientist and Technology Evangelist. Cat person. JavaScript blogger. Custom platform / software design.",
+  "social": {
+    "twitter": "https://twitter.com/joelnet",
+    "devTo": "https://dev.to/joelnet",
+    "github": "https://github.com/joelnet"
+  },
+  "button": {
+    "text": "Say Hello",
+    "link": "https://twitter.com/joelnet"
+  }
+}

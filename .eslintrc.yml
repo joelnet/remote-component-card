@@ -1,5 +1,6 @@
 env:
   es6: true
+  node: true
 parserOptions:
   ecmaVersion: 10
   ecmaFeatures:
@@ -7,7 +8,14 @@ parserOptions:
   sourceType: module
 plugins:
   - prettier
+  - react
 rules:
   prettier/prettier: error
+  no-undef: error
+  no-unused-vars: error
 extends:
   - 'plugin:prettier/recommended'
+  - 'plugin:react/recommended'
+settings:
+  react:
+    version: detect

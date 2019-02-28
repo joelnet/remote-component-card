@@ -1,3 +1,3 @@
-const gotoUrl = url => () => (global.location.href = url)
+const gotoUrl = href => () => Object.assign(global.location, { href })
 
 export default gotoUrl

@@ -19,30 +19,39 @@ const Card = styled(
     tagline,
     profileImage,
     profileImage2,
-    social,
+    twitter,
+    devTo,
+    github,
     description,
-    button
+    buttonLink,
+    buttonText
   }) => (
     <div className={`${className} profile-card`}>
       <Head>
         <ProfileImage src={profileImage} src2={profileImage2} />
         <div>
-          <a href={social.twitter}>
-            <Twitter />
-          </a>
-          <a href={social.devTo}>
-            <DevTo />
-          </a>
-          <a href={social.github}>
-            <Github />
-          </a>
+          {twitter && (
+            <a href={twitter}>
+              <Twitter />
+            </a>
+          )}
+          {devTo && (
+            <a href={devTo}>
+              <DevTo />
+            </a>
+          )}
+          {github && (
+            <a href={github}>
+              <Github />
+            </a>
+          )}
         </div>
       </Head>
       <Name>{name}</Name>
       <Tagline>{tagline}</Tagline>
       <Divider />
       <Description>{description}</Description>
-      <Button onClick={gotoUrl(button.link)}>{button.text}</Button>
+      <Button onClick={gotoUrl(buttonLink)}>{buttonText}</Button>
     </div>
   )
 )`

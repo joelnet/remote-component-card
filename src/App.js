@@ -1,11 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import config from '../config/default.json'
 import Card from './components/Card'
 
-const App = styled(({ className }) => (
+const App = styled(({ className, ...props }) => (
   <div className={className}>
-    <Card {...config} />
+    <Card {...props} />
   </div>
 ))`
   @import url('https://fonts.googleapis.com/css?family=Raleway');

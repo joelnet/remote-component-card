@@ -1,15 +1,11 @@
 import React from 'react'
-import styled from 'styled-components'
 import Card from './components/Card'
+import { appStyle } from './App.style'
 
-const App = styled(({ className, ...props }) => (
+const App = appStyle(({ className, ...props }) => (
   <div className={className}>
     <Card {...props} />
   </div>
-))`
-  @import url('https://fonts.googleapis.com/css?family=Raleway');
-  font-family: Raleway, sans-serif;
-  text-align: center;
-`
+))
 
 export default App

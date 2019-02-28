@@ -10,6 +10,8 @@
     "build:lib": "webpack --mode production --config webpack.library.config.js",
     "build:libdev": "webpack --mode development --config webpack.library.config.js",
     "clean": "rimraf dist lib",
+    "deploy:lib": "./scripts/deploylib.sh",
+    "deploy:web": "./scripts/deployweb.sh",
     "lint": "eslint .",
     "start": "webpack-dev-server --hot --mode development --open --config webpack.web.config.js"
   },

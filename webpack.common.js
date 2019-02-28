@@ -1,3 +1,10 @@
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+
+const bundleAnalyzerPlugin = new BundleAnalyzerPlugin({
+  analyzerMode: 'static',
+  openAnalyzer: false
+})
+
 module.exports = {
   devtool: 'source-map',
   module: {
@@ -10,5 +17,6 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [bundleAnalyzerPlugin]
 }

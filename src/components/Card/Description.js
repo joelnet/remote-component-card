@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { descriptionStyle } from './Description.style'
 
-const Description = styled.div([descriptionStyle])
-
-export default Description
+export default styled.div`
+  line-height: 1.4em;
+  font-size: 14px;
+`

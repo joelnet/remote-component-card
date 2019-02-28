@@ -1,11 +1,11 @@
 import React from 'react'
+import { StyledApp } from './App.style'
 import Card from './components/Card'
-import { appStyle } from './App.style'
 
-const App = appStyle(({ className, ...props }) => (
-  <div className={className}>
+const App = props => (
+  <StyledApp>
     <Card {...props} />
-  </div>
-))
+  </StyledApp>
+)
 
 export default App

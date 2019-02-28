@@ -1,6 +1,7 @@
 import styled from 'styled-components'
-import { taglineStyle } from './Tagline.style'
 
-const Tagline = styled.div([taglineStyle])
-
-export default Tagline
+export default styled.div`
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 14px;
+`

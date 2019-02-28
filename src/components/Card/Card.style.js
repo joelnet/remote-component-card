@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const CardStyle = Component => styled(Component)`
+export const StyledCard = styled.div`
   /* box shadow */
   -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.33);
   -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.33);

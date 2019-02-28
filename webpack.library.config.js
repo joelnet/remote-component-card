@@ -12,6 +12,7 @@ module.exports = merge(common, {
   plugins: [],
   externals: {
     react: 'react',
-    'styled-components': 'styled-components'
+    'styled-components': 'styled-components',
+    'prop-types': 'prop-types'
   }
 })
